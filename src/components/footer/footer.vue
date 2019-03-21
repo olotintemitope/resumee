@@ -15,8 +15,9 @@ export default {
     },
     mixins: [myMixin],
     data() {
+        const year = new Date().getFullYear();
         return  {
-            copyright: '© 2017 All rights reserved',
+            copyright: `© ${year} All rights reserved`,
         }
     },
 }
