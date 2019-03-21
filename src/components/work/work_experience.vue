@@ -9,10 +9,8 @@
             <li v-for="workHistory in workHistories" v-bind:key="workHistory.id">
                 <h3 class="line-title">{{ workHistory.position }} - {{ workHistory.company_name }}</h3>
                 <span>{{ workHistory.year_from }} - {{ workHistory.year_to }}</span>
-                <p class="little-text">{{ workHistory.description }}</p>
+                <p class="little-text" v-html="workHistory.description">{{ workHistory.description }}</p>
             </li>
-            <!-- a work -->
-            
         </ul>
     </div>
 </template>
@@ -24,28 +22,52 @@ export default {
             workHistories: [
                 {
                     id: 1,
-                    company_name: 'Facebook Inc',
-                    position: 'Art Director',
-                    year_from: '2010',
-                    year_to: 'Present',
-                    description: `Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.`
+                    company_name: 'ITvessel Ltd, Ilorin',
+                    position: 'Fullstack Developer',
+                    year_from: 'Feb 2014',
+                    year_to: 'Aug 2015',
+                    description: `ITvessel Limited is an IT firm that is equipped with the best human resources and specializes in cloud application development, website and software application training.`
                 },
                 {
                     id: 2,
-                    company_name: 'Google',
-                    position: 'Senior Designer',
-                    year_from: '2008',
-                    year_to: '2010',
-                    description: `So insisted received is occasion advanced honoured. Among ready to which up. Attacks smiling and may out assured moments man nothing outward.`
+                    company_name: 'Hoog Ent Sol, Ilorin',
+                    position: 'Fullstack Developer',
+                    year_from: 'Oct 2015',
+                    year_to: 'Jan 2016',
+                    description: `Hoog Enterprise Solutions is an IT firm that helped companies build enterprise solutions for their businesses.`
                 },
                 {
                     id: 3,
-                    company_name: 'Creative Shake',
-                    position: 'Junior Designer',
-                    year_from: '2005',
-                    year_to: '2008',
-                    description: `Excited him now natural saw passage offices you minuter. At by asked being court hopes. Farther so friends am to detract.`
-                }
+                    company_name: 'Accounteer, Belgium',
+                    position: 'Web Developer,',
+                    year_from: 'Aug 2016',
+                    year_to: 'July 2017',
+                    description: `Accounteer is a Cloud Accounting Software startup based out of Belgium.`
+                },
+                {
+                    id: 4,
+                    company_name: 'Waldo Contacts, London',
+                    position: 'Web Developer',
+                    year_from: '2017',
+                    year_to: '2018',
+                    description: `Waldo leverage the power of Shopify to build an e-commerce shop for selling contact lenses.`
+                },
+                {
+                    id: 5,
+                    company_name: 'CSP, New York',
+                    position: 'Web Developer',
+                    year_from: 'Sep 2018',
+                    year_to: 'Present',
+                    description: `Cause Strategy Partners helps social good organizations achieve their missions fueled by great leadership, great strategy and, most importantly, great results.`
+                },
+                {
+                    id: 6,
+                    company_name: 'Andela, Lagos',
+                    position: 'Software Developer',
+                    year_from: 'Jan 2016',
+                    year_to: 'Present',
+                    description: `Andela scales high performing distributed engineering teams with Africa’s most talented.`
+                },
             ]
         }
     }
