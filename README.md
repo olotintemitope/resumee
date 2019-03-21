@@ -1,4 +1,4 @@
-# find-fix
+# My Resume
 
 ## Project setup
 ```
