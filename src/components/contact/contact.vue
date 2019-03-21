@@ -32,19 +32,19 @@
                 </div>
                 <ul>
                     <li>
-                        <span>Address:</span> 107727 Santa Monica Boulevard Los Angeles
+                        <span>Address:</span> {{ address }}
                     </li>
                     <li>
-                        <span>Phone:</span> +38 012-3456-7890
+                        <span>Phone:</span> {{ phone }}
                     </li>
                     <li>
-                        <span>Job:</span> Freelancer
+                        <span>Job:</span> {{ job }}
                     </li>
                     <li>
-                        <span>E-mail:</span> chris@domain.com
+                        <span>E-mail:</span> {{ email }}
                     </li>
                     <li>
-                        <span>Skype:</span> chrisjohnson85
+                        <span>Skype:</span> {{ skype }}
                     </li>
                     <li>
                         <div class="social-icons top_15">
@@ -76,7 +76,9 @@
     </div>
 </template>
 <script>
+import myMixin from './../../mixins/profile.mixins.js'
 export default {
+    mixins: [myMixin],
 }
 </script>
 <style>

@@ -19,7 +19,7 @@
           </ul>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-8 dynamic">
-          <a href="mailto:hi@tavonline.net" class="pull-right site-btn icon hidden-xs">
+          <a v-bind:href="mailtoEmail"  class="pull-right site-btn icon hidden-xs">
             Hire Me
             <i class="fa fa-paper-plane" aria-hidden="true"></i>
           </a>
@@ -47,7 +47,16 @@
 </template>
 
 <script>
-export default {};
+import myMixin from './../../mixins/profile.mixins.js'
+
+export default {
+  mixins: [myMixin],
+  computed: {
+    mailtoEmail: function() {
+      return 'mailto:' + this.email;
+    }
+  }
+};
 </script>
 
 <style>
