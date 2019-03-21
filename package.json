@@ -6,12 +6,11 @@
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
         "lint": "vue-cli-service lint",
-        "postinstall": "npm run build",
-        "start": "node server.js"
+        "start": "node server.js",
+        "postinstall": "if test \"$NODE_ENV\" = \"production\" ; then npm run build ; fi "
     },
     "dependencies": {
-        "vue": "^2.5.22",
-        "express": "^4.16.4",
+        "vue": "^2.5.22"
     },
     "devDependencies": {
         "@vue/cli-plugin-babel": "^3.4.0",
