@@ -2,9 +2,9 @@
   <div class="col-lg-3 col-md-4">
     <div class="profile">
       <div class="profile-name">
-        <span class="name">STEPHANIE JANE</span>
+        <span class="name">{{ developer }}</span>
         <br>
-        <span class="job">Musician</span>
+        <span class="job">{{ job }}</span>
       </div>
       <figure class="profile-image">
         <img src="../../../src/assets/images/profile.jpg" alt>
@@ -13,27 +13,22 @@
         <li></li>
         <li>
           <p>
-            <span>Name:</span> Stephanie Hane
+            <span>Name:</span> {{ developer }}
           </p>
         </li>
         <li>
           <p>
-            <span>Birthday:</span> 06 December 1987
+            <span>Job:</span> {{ job }}
           </p>
         </li>
         <li>
           <p>
-            <span>Job:</span> Musician
+            <span>Email:</span> {{ email }}
           </p>
         </li>
         <li>
           <p>
-            <span>Email:</span> henry@domain.com
-          </p>
-        </li>
-        <li>
-          <p>
-            <span>Skype:</span> henryrooney85
+            <span>Skype:</span> {{ skype }}
           </p>
         </li>
       </ul>
@@ -48,7 +43,11 @@
 </template>
 
 <script>
-export default {};
+
+import myMixin from './../../mixins/profile.mixins.js'
+export default {
+   mixins: [myMixin],
+};
 </script>
 
 <style>

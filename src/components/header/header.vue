@@ -14,15 +14,6 @@
               <a href="#resume">RESUME</a>
             </li>
             <li class="tab">
-              <a href="#portfolio">PORTFOLIO</a>
-            </li>
-            <li class="tab">
-              <a href="#event">EVENTS</a>
-            </li>
-            <li class="tab">
-              <a href="#blog">BLOG</a>
-            </li>
-            <li class="tab">
               <a href="#contact">CONTACT</a>
             </li>
           </ul>

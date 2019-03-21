@@ -27,56 +27,7 @@
                                     </p>
                                 </section>
                             </div>
-                            <div class="row">
-                                <section class="services line graybg col-md-12 padding_50 padbot_50">
-                                    <div class="section-title bottom_45">
-                                        <span></span>
-                                        <h2>My Services</h2>
-                                    </div>
-                                    <div class="row">
-                                        <!-- a service -->
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
-                                            <div class="service">
-                                                <div class="icon">
-                                                    <i class="flaticon-acoustic-guitar"></i>
-                                                </div>
-                                                <span class="title">Acoustic Guitar</span>
-                                                <p class="little-text">I've been playing acoustic guitar since I was 8 years old.</p>
-                                            </div>
-                                        </div>
-                                        <!-- a service -->
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
-                                            <div class="service">
-                                                <div class="icon">
-                                                    <i class="flaticon-microphone-1"></i>
-                                                </div>
-                                                <span class="title">Singing</span>
-                                                <p class="little-text">I like singing at least as much as playing guitar.</p>
-                                            </div>
-                                        </div>
-                                        <!-- a service -->
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
-                                            <div class="service">
-                                                <div class="icon">
-                                                    <i class="flaticon-drumsticks"></i>
-                                                </div>
-                                                <span class="title">Drum</span>
-                                                <p class="little-text">It is very enjoyable for me to play drums.</p>
-                                            </div>
-                                        </div>
-                                        <!-- a service -->
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
-                                            <div class="service">
-                                                <div class="icon">
-                                                    <i class="flaticon-sound-frecuency"></i>
-                                                </div>
-                                                <span class="title">Arranger</span>
-                                                <p class="little-text">I can create a songbird infrastructure.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
+                            
                             <div id="resume">
                                 <!-- Resume Section -->
                                 <div class="row">
@@ -87,59 +38,9 @@
                                         </div>
                                         <div class="row">
                                             <!-- Working History -->
-                                            <div class="working-history col-md-6 padding_15 padbot_30">
-                                                <ul class="timeline col-md-12 top_45">
-                                                    <li>
-                                                        <i class="fa fa-suitcase" aria-hidden="true"></i>
-                                                        <h2 class="timeline-title">Working History</h2>
-                                                    </li>
-                                                    <!-- a work -->
-                                                    <li>
-                                                        <h3 class="line-title">Art Director - Facebook Inc</h3>
-                                                        <span>2010 - Present</span>
-                                                        <p class="little-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
-                                                    </li>
-                                                    <!-- a work -->
-                                                    <li>
-                                                        <h3 class="line-title">Senior Designer - Google</h3>
-                                                        <span>2008 - 2010</span>
-                                                        <p class="little-text">So insisted received is occasion advanced honoured. Among ready to which up. Attacks smiling and may out assured moments man nothing outward.</p>
-                                                    </li>
-                                                    <!-- a work -->
-                                                    <li>
-                                                        <h3 class="line-title">Junior Designer - Creative Shake</h3>
-                                                        <span>2005 - 2008</span>
-                                                        <p class="little-text">Excited him now natural saw passage offices you minuter. At by asked being court hopes. Farther so friends am to detract.</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                            <WorkingHistory/>
                                             <!-- Education History -->
-                                            <div class="education-history col-md-6 padding_15 padbot_30">
-                                                <ul class="timeline col-md-12 top_45">
-                                                    <li>
-                                                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                                        <h2 class="timeline-title">Education History</h2>
-                                                    </li>
-                                                    <!-- a work -->
-                                                    <li>
-                                                        <h3 class="line-title">Abc University of Los Angeles</h3>
-                                                        <span>2004 - 2009</span>
-                                                        <p class="little-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
-                                                    </li>
-                                                    <!-- a work -->
-                                                    <li>
-                                                        <h3 class="line-title">Drawing Course</h3>
-                                                        <span>2003 - 2004</span>
-                                                        <p class="little-text">So insisted received is occasion advanced honoured. Among ready to which up. Attacks smiling and may out assured moments man nothing outward.</p>
-                                                    </li>
-                                                    <!-- a work -->
-                                                    <li>
-                                                        <h3 class="line-title">Abc High School</h3>
-                                                        <span>2000 - 2003</span>
-                                                        <p class="little-text">Excited him now natural saw passage offices you minuter. At by asked being court hopes. Farther so friends am to detract.</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                            <EducationHistory />
                                         </div>
                                     </section>
                                 </div>
@@ -150,17 +51,8 @@
                     <!-- col-md-12 end -->
                 </div>
                 <!-- row end -->
-                <!-- Footer
-                    ==================================================-->
-                <footer>
-                    <div class="footer col-md-12 top_30 bottom_30">
-                        <div class="name col-md-4 hidden-md hidden-sm hidden-xs">Henry Rooney.</div>
-                        <div class="copyright col-lg-8 col-md-12">
-                            © 2017 All rights reserved. Designed by
-                            <a href="https://themeforest.net/user/tavonline">tavonline</a>
-                        </div>
-                    </div>
-                </footer>
+                <!-- Footer ==================================================-->
+                <Footer />
             </div>
             <!-- Tab Container - End -->
         </div>
@@ -171,6 +63,9 @@
     import Header from "./components/header/header.vue"
     import Profile from "./components/profile/myprofile.vue"
     import Contact from "./components/contact/contact.vue"
+    import Footer from "./components/footer/footer.vue" 
+    import WorkingHistory from "./components/work/work_experience.vue"
+    import EducationHistory from "./components/work/education_history.vue"
     
     // Import all css here
     import './../src/assets/css/bootstrap.css'
@@ -187,7 +82,10 @@
       components: {
         Profile,
         Header,
-        Contact
+        Contact,
+        Footer,
+        WorkingHistory,
+        EducationHistory
       }
     };
 </script>
