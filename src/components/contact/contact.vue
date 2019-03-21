@@ -48,18 +48,7 @@
                     </li>
                     <li>
                         <div class="social-icons top_15">
-                            <a class="fb" href="#">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                            <a class="tw" href="#">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                            <a class="ins" href="#">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            </a>
-                            <a class="dr" href="#">
-                            <i class="fa fa-dribbble" aria-hidden="true"></i>
-                            </a>
+                            <SocialLinks :v_data="social"/>
                         </div>
                     </li>
                 </ul>
@@ -76,9 +65,17 @@
     </div>
 </template>
 <script>
+// Import mixins
 import myMixin from './../../mixins/profile.mixins.js'
+
+// Import components
+import SocialLinks from './../partials/social/social_links.vue'
+
 export default {
     mixins: [myMixin],
+    components: {
+        SocialLinks,
+    }
 }
 </script>
 <style>

@@ -19,7 +19,7 @@
           </ul>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-8 dynamic">
-          <a v-bind:href="mailtoEmail"  class="pull-right site-btn icon hidden-xs">
+          <a :href="mailtoEmail"  class="pull-right site-btn icon hidden-xs">
             Hire Me
             <i class="fa fa-paper-plane" aria-hidden="true"></i>
           </a>
@@ -27,18 +27,7 @@
             <i class="fa fa-bars" aria-hidden="true"></i>
           </div>
           <div class="hidden-md social-icons pull-right">
-            <a class="fb" href="#">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a class="tw" href="#">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a class="ins" href="#">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a class="dr" href="#">
-              <i class="fa fa-dribbble" aria-hidden="true"></i>
-            </a>
+            <SocialLinks :v_data="social"/>
           </div>
         </div>
       </div>
@@ -47,9 +36,16 @@
 </template>
 
 <script>
+// Import mixins
 import myMixin from './../../mixins/profile.mixins.js'
 
+// Import components
+import SocialLinks from './../partials/social/social_links.vue'
+
 export default {
+  components: {
+    SocialLinks,
+  },
   mixins: [myMixin],
   computed: {
     mailtoEmail: function() {

@@ -20,10 +20,10 @@ export default {
             A Team Lead that assisted with the development of high priority features that lead to customer retention of about 20% and brought in an additional 5%. 
             An enthusiastic team player and deep creative thinker. In my free time, I blog, composer songs and enjoy quality time with family.`,
             social: {
-                facebook: '',
-                twitter: '',
-                github: '',
-                linkedin: ''
+                facebook: 'https://www.facebook.com/Laztopaz',
+                twitter: 'https://twitter.com/LytopzSolutionz',
+                github: 'https://github.com/andela-tolotin',
+                linkedin: 'https://www.linkedin.com/in/olotin-temitope-53b43272'
             },
         }
     }
