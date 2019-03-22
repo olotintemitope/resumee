@@ -25,6 +25,19 @@
                 <p class="little-text">{{ certification.description }}</p>
             </li>
         </ul>
+
+        <ul class="timeline col-md-12 top_45">
+            <li>
+                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                <h2 class="timeline-title">Mentorship</h2>
+            </li>
+            <!-- a work -->
+            <li v-for="mentorship in mentorships" :key="mentorship.id">
+                <h3 class="line-title">{{ mentorship.company_name }}</h3>
+                <span>{{ mentorship.year_from }} - {{ mentorship.year_to }}</span>
+                <p class="little-text">{{ mentorship.description }}</p>
+            </li>
+        </ul>
     </div>
 </template>
 
@@ -50,7 +63,22 @@ export default {
                     description: 'A graduate of Mobile Web Specialist'
                 }
             ],
-            mentorships: []
+            mentorships: [
+                {
+                    id: 1,
+                    company_name: 'Andela',
+                    year_from: 'Nov 2016',
+                    year_to: 'Nov 2016',
+                    description: 'I participated in Andela Open Mentorship Program - Mentoring young minds on Cloud Computing, Relational, and Non-Relational Databases'
+                },
+                {
+                    id: 2,
+                    company_name: 'ALC Rwanda',
+                    year_from: 'Oct 2018',
+                    year_to: 'Present',
+                    description: 'I participated in Andela Learning Community Program - Helping unblock learners'
+                }
+            ]
         }
     }
 }
