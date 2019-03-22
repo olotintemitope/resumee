@@ -40,6 +40,7 @@
                                         </div>
                                     </section>
                                 </div>
+                                <Skills/>
                                 <Contact/>
                             </div>
                         </div>
@@ -65,6 +66,7 @@
     import Footer from "./components/footer/footer.vue" 
     import WorkingHistory from "./components/work/work_experience.vue"
     import EducationHistory from "./components/work/education_history.vue"
+    import Skills from "./components/skills/skills.vue"
     
     // Import all css here
     import './../src/assets/css/bootstrap.css'
@@ -84,7 +86,8 @@
         Contact,
         Footer,
         WorkingHistory,
-        EducationHistory
+        EducationHistory,
+        Skills
       },
       mixins: [myMixin],
     };
