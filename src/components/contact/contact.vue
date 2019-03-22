@@ -59,7 +59,7 @@
                     <span></span>
                     <h2>Contact Map.</h2>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24396.455763004884!2d-115.13108354428735!3d36.18912977254862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos+Angeles%2C+Kaliforniya%2C+Birle%C5%9Fik+Devletler!5e0!3m2!1str!2str!4v1509525039851" height="350" style="border:0" allowfullscreen="allowfullscreen"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3963.512507110543!2d3.2888833153302004!3d6.583030124293412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s14+anfani+close+off+emmanuel+osakwe!5e0!3m2!1sen!2sng!4v1553276317757" height="350" style="border:0" allowfullscreen="allowfullscreen"></iframe>
             </section>
         </div>
     </div>
