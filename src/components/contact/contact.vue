@@ -7,16 +7,16 @@
                     <span></span>
                     <h2>Contact Form</h2>
                 </div>
-                <form class="site-form">
+                <form class="site-form" @submit.prevent="processForm">
                     <div class="row">
                         <div class="col-md-6">
-                            <input class="site-input" placeholder="Name">
+                            <input class="site-input" placeholder="Name" name="name" v-model="name" required>
                         </div>
                         <div class="col-md-6">
-                            <input class="site-input" placeholder="E-mail">
+                            <input class="site-input" placeholder="E-mail" name="email" v-model="email" required>
                         </div>
                         <div class="col-md-12">
-                            <textarea class="site-area" placeholder="Message"></textarea>
+                            <textarea class="site-area" placeholder="Message" name="message" v-model="message" required></textarea>
                         </div>
                         <div class="col-md-12 top_15 bottom_30">
                             <button class="site-btn" type="submit">Submit</button>
@@ -75,6 +75,18 @@ export default {
     mixins: [myMixin],
     components: {
         SocialLinks,
+    },
+    data() {
+        return {
+            name: '',
+            email: '',
+            message: ''
+        }
+    },
+    methods: {
+        processForm: function() {
+            console.log('name', this.name);
+        }
     }
 }
 </script>
