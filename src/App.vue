@@ -1,8 +1,8 @@
 <template>
 <div id="app" class="wrapper top_60 container">
   <!-- Preloading -->
-    <div id="preloader" v-show="preloader">
-        <div class="spinner"></div>
+    <div id="preloader" v-if="preloader">
+        <div class="spinner"></div> {{ preloader }}
     </div>
     <div class="row">
         <!-- Profile Section ================================================== -->
@@ -96,13 +96,16 @@ export default {
     },
     data() {
       return {
-        preloader: true,
+        preloader: false,
       }
     },
     mixins: [myMixin],
     mounted() {
       this.preloader = false;
     },
+    created() {
+      this.preloader = true;
+    }
 };
 </script>
 
