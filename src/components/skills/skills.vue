@@ -38,8 +38,8 @@ export default {
                 '<strong>CI Tools:</strong> Travis CI, Circle CI',
                 '<strong>Databases:</strong> PostgreSQL, MySQL',
                 '<strong>Mobile Web:</strong> Progressive Web App',
-                '<strong>Caching:</strong> Redis, Service Worker',
-                '<strong>Testing:</strong> PHPUnit, Mocking, Selenium Driver, Codeception',
+                '<strong>Caching:</strong> Redis, Memcache',
+                '<strong>Testing:</strong> PHPUnit, Mocking, Selenium Driver, Codeception, Dusk',
                 '<strong>Servers:</strong> Nginx, Apache'
             ]
         }
