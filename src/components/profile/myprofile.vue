@@ -34,7 +34,7 @@
       </ul>
       <div class="col-md-12">
         <button class="site-btn icon">
-          Download Cv
+          <a href="https://drive.google.com/drive/u/3/my-drive download">Download Cv</a>
           <i class="fa fa-download" aria-hidden="true"></i>
         </button>
       </div>
