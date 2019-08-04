@@ -16,14 +16,16 @@
 </template>
 
 <script>
+
+import {store} from './../../../store/index'
+
 export default {
     props: {
         v_data: Object
     },
     data() {
-        const social = this.v_data
         return {
-            social
+            social: store.getters.SOCIAL
         }
     }
 }

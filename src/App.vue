@@ -73,6 +73,9 @@ import WorkingHistory from "./components/work/work_experience.vue"
 import EducationHistory from "./components/work/education_history.vue"
 import Skills from "./components/skills/skills.vue"
 
+//Import datastore;
+import {store} from './store/index.js'
+
 // Import all css here
 import './../src/assets/css/bootstrap.css'
 import './../src/assets/css/reset.css'
@@ -97,6 +100,7 @@ export default {
     data() {
       return {
         preloader: false,
+        about: store.getters.ABOUT
       }
     },
     mixins: [myMixin],

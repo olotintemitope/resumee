@@ -42,43 +42,15 @@
 </template>
 
 <script>
+
+import {store} from './../../store/index.js'
+
 export default {
     data() {
         return {
-            academicHistories: [
-                {
-                    id: 1,
-                    school_name: 'The Federal Polytechnic, Ado Ekiti',
-                    year_from: '2007',
-                    year_to: '2012',
-                    description: 'I studied Computer Science and graduated with a CGPA 3.33.'
-                }
-            ],
-            certifications: [
-                {
-                    id: 1,
-                    school_name: 'Udacity',
-                    year_from: 'June 2018',
-                    year_to: 'Dec 10, 2018',
-                    description: 'A graduate of Mobile Web Specialist'
-                }
-            ],
-            mentorships: [
-                {
-                    id: 1,
-                    company_name: 'Andela',
-                    year_from: 'Nov 2016',
-                    year_to: 'Nov 2016',
-                    description: 'I participated in Andela Open Mentorship Program - Mentoring young minds on Cloud Computing, Relational, and Non-Relational Databases'
-                },
-                {
-                    id: 2,
-                    company_name: 'ALC Rwanda',
-                    year_from: 'Oct 2018',
-                    year_to: 'Present',
-                    description: 'I participated in Andela Learning Community Program - Helping unblock learners'
-                }
-            ]
+            academicHistories: store.getters.ACADEMIC_HISTORIES,
+            certifications: store.getters.CERTIFICATIONS,
+            mentorships: store.getters.MENTORSHIPS
         }
     }
 }

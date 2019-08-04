@@ -45,8 +45,21 @@
 <script>
 
 import myMixin from './../../mixins/profile.mixins.js'
+import {store} from './../../store/index.js'
+
 export default {
-   mixins: [myMixin],
+  mixins: [myMixin],
+  data() {
+    return {
+      developer: store.getters.DEVELOPER,
+      job: store.getters.JOB,
+      email: store.getters.EMAIL,
+      skype: store.getters.SKYPE,
+      address: store.getters.ADDRESS,
+      phone:store.getters.PHONE,
+      about: store.getters.ABOUT
+    }
+  }
 };
 </script>
 

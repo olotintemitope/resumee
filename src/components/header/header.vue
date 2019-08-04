@@ -41,6 +41,8 @@ import myMixin from './../../mixins/profile.mixins.js'
 
 // Import components
 import SocialLinks from './../partials/social/social_links.vue'
+// Import datastore
+import {store} from './../../store/index'
 
 export default {
   components: {
@@ -49,7 +51,12 @@ export default {
   mixins: [myMixin],
   computed: {
     mailtoEmail: function() {
-      return 'mailto:' + this.email;
+      return 'mailto:' + store.getters.EMAIL;
+    }
+  },
+  data() {
+    return {
+      social: store.getters.SOCIAL
     }
   }
 };

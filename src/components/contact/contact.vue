@@ -68,21 +68,28 @@
 <script>
 // Import mixins
 import myMixin from './../../mixins/profile.mixins.js'
-
 // Import components
 import SocialLinks from './../partials/social/social_links.vue'
+// Import datastore
+import {store} from './../../store/index'
 
 export default {
+     data() {
+        return {
+            job: store.getters.JOB,
+            email: store.getters.EMAIL,
+            skype: store.getters.SKYPE,
+            address: store.getters.ADDRESS,
+            phone: store.getters.PHONE,
+            name: '',
+            email: '',
+            message: '',
+            social: store.getters.SOCIAL
+        }
+    },
     mixins: [myMixin],
     components: {
         SocialLinks,
-    },
-    data() {
-        return {
-            name: '',
-            email: '',
-            message: ''
-        }
     },
     methods: {
         processForm: function () {

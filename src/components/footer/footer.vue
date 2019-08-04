@@ -9,6 +9,7 @@
 
 <script>
 import myMixin from './../../mixins/profile.mixins.js'
+import {store} from './../../store/index.js'
 
 export default {
     props: {
@@ -18,6 +19,7 @@ export default {
         const year = new Date().getFullYear();
         return  {
             copyright: `© ${year} All rights reserved`,
+            developer: store.getters.DEVELOPER
         }
     },
 }

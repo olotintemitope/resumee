@@ -25,25 +25,13 @@
 </template>
 
 <script>
+import {store} from './../../store/index.js'
 export default {
-    data() {
-        return {
-            technologies: [
-                '<strong>FrontEnd:</strong> Angular2, Vue.js, jQuery, HTML5, CSS3, Web Accessibility,',
-                '<strong>Frameworks:</strong> PHP/Laravel, PHP/Symfony, Lumen, Slim, Node.js',
-                '<strong>Languages:</strong> PHP, Java, Ruby, Javascript',
-                '<strong>Cloud:</strong> AWS, Heroku',
-                '<strong>DevOps:</strong> Docker, K8s',
-                '<strong>Version Control:</strong> Git',
-                '<strong>CI Tools:</strong> Travis CI, Circle CI',
-                '<strong>Databases:</strong> PostgreSQL, MySQL',
-                '<strong>Mobile Web:</strong> Progressive Web App',
-                '<strong>Caching:</strong> Redis, Memcache',
-                '<strong>Testing:</strong> PHPUnit, Mocking, Selenium Driver, Codeception, Dusk',
-                '<strong>Servers:</strong> Nginx, Apache'
-            ]
-        }
+  data() {
+    return {
+      technologies: store.getters.TECHNOLOGIES
     }
+  }
 };
 </script>
 
