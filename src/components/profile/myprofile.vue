@@ -34,7 +34,7 @@
       </ul>
       <div class="col-md-12">
         <button class="site-btn icon">
-          <a href="https://drive.google.com/drive/u/3/my-drive download">Download Cv</a>
+          <a href="https://drive.google.com/open?id=1oi4oEMZMHb3605AXxOKE7EvzFb7vgaei" download>Download Cv</a>
           <i class="fa fa-download" aria-hidden="true"></i>
         </button>
       </div>
@@ -51,5 +51,13 @@ export default {
 </script>
 
 <style>
+.site-btn a  {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-btn a:hover {
+  color: cornsilk;
+}
 </style>
 
