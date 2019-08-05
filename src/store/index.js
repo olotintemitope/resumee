@@ -164,8 +164,11 @@ export const store = new Vuex.Store({
         TECHNOLOGIES: state => {
             return state.technologies;
         }
-
     },
-    mutations: {},
+    mutations: {
+        CHANGE_EMAIL(state, payload) {
+            state.email = payload.email;
+        }
+    },
     actions: {}
 });

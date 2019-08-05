@@ -59,8 +59,16 @@ export default {
       phone:store.getters.PHONE,
       about: store.getters.ABOUT
     }
+  },
+  methods: {
   }
 };
+
+/**
+ *  store.commit('changeEmail',   {
+    email: 'temitope.olotin@andela.com'
+  }
+ */
 </script>
 
 <style>
