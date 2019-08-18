@@ -19,7 +19,7 @@ export const store = new Vuex.Store({
             An enthusiastic team player and deep creative thinker. In my free time, I blog, composer songs and enjoy quality time with family.`,
         social: {
             facebook: 'https://www.facebook.com/Laztopaz',
-            twitter: 'https://twitter.com/LytopzSolutionz',
+            twitter: 'https://twitter.com/laztopaz_',
             github: 'https://github.com/andela-tolotin',
             linkedin: 'https://www.linkedin.com/in/olotin-temitope-53b43272'
         },
